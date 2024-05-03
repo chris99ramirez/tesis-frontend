@@ -1,0 +1,63 @@
+@import "~bootstrap/scss/bootstrap";
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+$primary-color: #042354;
+$secondary-color: #6c757d;
+$success-color: #198754;
+$link-color: rgb(0, 112, 248);
+$info-color: #0dcaf0;
+$warning-color: #ffc107;
+$danger-color: #dc3545;
+$light-color: #fff;
+$dark-color: #212529;
+
+$primary-color-hover: #66a2e6;
+
+$background-success: #84b84c1f;
+$background-error: #ff00001f;
+
+// response down size
+$media-breakpoint-down-xs: 413.98px;
+$media-breakpoint-down-sm: 573.98px;
+$media-breakpoint-down-md: 767.98px;
+$media-breakpoint-down-lg: 991.98px;
+$media-breakpoint-down-xl: 1199.98px;
+
+// response up size
+$media-breakpoint-up-xs: 320px;
+$media-breakpoint-up-sm: 576px;
+$media-breakpoint-up-md: 768px;
+$media-breakpoint-up-lg: 992px;
+$media-breakpoint-up-xl: 1200px;
+
+$theme-colors: (
+  "primary":    $primary-color,
+  "secondary":  $secondary-color,
+  "success":    $success-color,
+  "info":       $info-color,
+  "warning":    $warning-color,
+  "danger":     $danger-color,
+  "light":      $light-color,
+  "dark":       $dark-color
+);
+
+.toastPanda {
+    position: fixed !important;
+    right: 1em !important;
+    top: 8em !important;
+    //background: $primary-color !important;
+}
+.success {
+    border: 1px solid $success-color;
+    background-color: $background-success;
+  }
+  .error {
+    border: 1px solid $danger-color;
+    background-color: $background-error;
+  }
+  .principal {
+    padding-bottom: 1em;
+    min-height: calc(100vh - 280px);
+  }
+  .hidden {
+    display: none;
+  }

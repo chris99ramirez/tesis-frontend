@@ -1,0 +1,55 @@
+.Navbar {
+    width: 70px; 
+    height: 100vh; 
+    background-color: #158D8D; 
+    transition: width 0.3s ease; 
+    position: relative; 
+    z-index: 2; 
+  
+
+    .Navbar__toggle {
+        position: absolute;
+        top: 10px;
+        left: 50%; 
+        transform: translateX(-50%);
+        z-index: 3; 
+        cursor: pointer;
+      color: white; 
+  
+      span {
+        font-size: 1.5rem; 
+      }
+    }
+  
+
+    .NavBar__sidebarList {
+      list-style-type: none;
+      margin: 0;
+      padding: 2rem 0 0; 
+      opacity: 0; 
+      transition: opacity 0.3s ease; 
+  
+      .NavBar__sidebarList-dataRow {
+        text-decoration: none;
+        color: white; 
+        padding: 1rem;
+        display: block;
+        white-space: nowrap; 
+  
+        &:hover,
+        &.selected {
+          background-color: #20cece;
+        }
+      }
+    }
+  
+
+    &--expanded {
+      width: 200px; 
+  
+      .NavBar__sidebarList {
+        opacity: 1; 
+      }
+    }
+  }
+  

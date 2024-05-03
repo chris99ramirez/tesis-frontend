@@ -1,0 +1,12 @@
+.layout-basic {
+    display: flex;
+
+    
+    .layout-basic__content {
+      flex-grow: 1; 
+      margin-left: 20px; 
+      padding: 20px; 
+      background-color: #f7f7f7; 
+    }
+  }
+  

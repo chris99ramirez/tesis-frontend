@@ -1,0 +1,110 @@
+.detail-container {
+    .info-row {
+        display: flex;
+        align-items: center; 
+        justify-content: flex-start; 
+        margin-bottom: 10px; 
+        .info-column-marca{
+            display: flex;
+            justify-content: space-between; 
+
+            width: 80%; 
+            .select-with-button {
+                display: flex;
+                width: 61%; 
+                select {
+                    height: 40px; 
+                    width: 60%;
+                    border-radius: 5px; 
+                    border: 1px solid #ccc; 
+                    margin-right: 10px; 
+                    
+                    &:focus {
+                        outline: none;
+                        border-color: #0056b3; 
+                    }
+                }
+                
+                .add-button {
+                    padding: 10px 20px; 
+                    border: none; 
+                    border-radius: 5px; 
+                    background-color: #009688; 
+                    color: white; 
+                    cursor: pointer; 
+                    
+                    &:hover {
+                        background-color: darken(#009688, 10%); 
+                    }
+                }
+            }
+        }
+        .info-column {
+            display: flex;
+            justify-content: space-between; 
+            width: 80%; 
+            .select-with-button {
+                display: flex;
+                
+                
+                select {
+                    height: 40px; 
+                    border-radius: 5px; 
+                    border: 1px solid #ccc; 
+                    margin-right: 10px; 
+                    
+                    &:focus {
+                        outline: none;
+                        border-color: #0056b3; 
+                    }
+                }
+                
+                .add-button {
+                    padding: 10px 20px; 
+                    border: none; 
+                    border-radius: 5px; 
+                    background-color: #00b4d8; 
+                    color: white; 
+                    cursor: pointer; 
+                    
+                    &:hover {
+                        background-color: darken(#00b4d8, 10%); 
+                    }
+                }
+            }
+            
+            .info-value select {
+                height: 40px; 
+                width: 94%;
+                border-radius: 5px; 
+                border: 1px solid #ccc; 
+                background-color: white; 
+                padding-left: 10px; 
+                box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+            
+                &:focus {
+                    outline: none;
+                    border-color: #0056b3; 
+                    box-shadow: 0 0 5px rgba(0, 86, 179, 0.5); 
+                }
+            }
+            .info-value {
+                width: 60%; 
+                padding: 5px;
+            }
+            .info-textbox {
+                margin-right: 30px; 
+                width: 55%; 
+                padding: 5px;
+                border: 1px solid #ccc; 
+                font-weight: bold;
+                font-size: 1.5em;
+                                &:focus {
+                    border-color: #80bdff;
+                    outline: 0;
+                    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+                }
+            }
+        }
+    }
+}
